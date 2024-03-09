@@ -35,3 +35,32 @@ dotnet run
 
 • Responda 'S' se deseja executar novamente ou 'N' para sair do programa
 ```
+
+
+## Explicando o método VerificarSequencia
+
+**FUNCIONAMENTO**
+
+_O método começa verificando se o número fornecido for zero, ele é considerado parte da sequência de Fibonacci e o método retorna true._
+
+_Em seguida, o método utiliza um loop while para iterar pela sequência de Fibonacci, calculando os próximos números na sequência até encontrar um número igual ao fornecido. Se o número fornecido for encontrado na sequência, o método retorna true. Se o número fornecido for maior do que os números na sequência de Fibonacci, o método retorna false._
+
+
+***Exemplo***
+
+```
+int numero = 8;
+bool pertence = VerificarSequenciaFibonacci.VerificarSequencia(numero);
+
+if (pertence)
+{
+    Console.WriteLine($"{numero} pertence à sequência de Fibonacci.");
+}
+else
+{
+    Console.WriteLine($"{numero} não pertence à sequência de Fibonacci.");
+}
+
+
+```
+_Neste exemplo, o número 8 é verificado para determinar se pertence à sequência de Fibonacci. O resultado será "8 pertence à sequência de Fibonacci.", já que 8 é um número na sequência de Fibonacci._
